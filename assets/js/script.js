@@ -27,14 +27,7 @@ function generatePassword() {
   return retVal;
 }
 
-//puzzle pieces
-//var low = "abc"
-
-//var high =
-
-//var num =
-
-//var speChar =
+//Lowercase 
 function generateLowercasePassword() {
   
   var length = 8,
