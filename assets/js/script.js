@@ -12,22 +12,13 @@ function generatePassword() {
   var length = 8,
       charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789",
       retVal = "";
-  
-
   for (var i = 0, n = charset.length; i < length; ++i) {   
       retVal += charset.charAt(Math.floor(Math.random() * n));
   }
-  
-  for(var i = 0; i < length;i++){
-    //write code
-  }
-
-
-
   return retVal;
 }
 
-//Lowercase 
+//Lowercase generator 
 function generateLowercasePassword() {
   
   var length = 8,
@@ -39,6 +30,22 @@ function generateLowercasePassword() {
 
   return retVal.toLowerCase();
 }
+
+//Lowercase button
+var generateLowercaseBtn = document.querySelector("#generateLowerCase");
+console.log(generateLowercaseBtn);
+
+//Lowercase listener
+generateLowercaseBtn.addEventListener("click", function(){
+  var lowerCasePassword = generateLowercasePassword();
+  var passwordTest = document.querySelector("#password");
+  passwordTest.value = lowerCasePassword;
+})
+
+//Num generator
+//
+
+//Spec-char generator
 
 
 // Get references to the #generate element
@@ -57,13 +64,3 @@ function writePassword() {
 generateBtn.addEventListener("click", writePassword);
 
 
-//Lowercase button
-var generateLowercaseBtn = document.querySelector("#generateLowerCase");
-console.log(generateLowercaseBtn);
-
-//Lowercase listener
-generateLowercaseBtn.addEventListener("click", function(){
-  var lowerCasePassword = generateLowercasePassword();
-  var passwordTest = document.querySelector("#password");
-  passwordTest.value = lowerCasePassword;
-})
