@@ -5,7 +5,6 @@ The Password Generator creates random passwords. It allows the user to enter the
 
 # Screenshot
 ![Password Generator Screenshot](assets/images/PassGenScrnsht.png)
-![Horiseon ScreenShot](assets/ images/ Hori-ScreenShot.png)
 
 # Website
 https://narmstrongv.github.io/pass-generator-challenge3/
